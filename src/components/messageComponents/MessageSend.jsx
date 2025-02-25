@@ -60,7 +60,7 @@ const MessageSend = ({ chatId }) => {
 			socket.emit("stop typing", selectedChat._id);
 			dispatch(setSendLoading(true));
 			const token = localStorage.getItem("token");
-			fetch(`http://localhost:5000/api/message`, {
+			fetch(`https://chatback-gleq.onrender.com/api/message`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

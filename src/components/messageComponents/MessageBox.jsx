@@ -34,7 +34,7 @@ const MessageBox = ({ chatId }) => {
 		const getMessage = (chatId) => {
 			dispatch(setMessageLoading(true));
 			const token = localStorage.getItem("token");
-			fetch(`http://localhost:5000/api/message/${chatId}`, {
+			fetch(`https://chatback-gleq.onrender.com/api/message/${chatId}`, {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json",

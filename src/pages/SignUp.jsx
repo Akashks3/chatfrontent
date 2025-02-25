@@ -17,7 +17,7 @@ const SignUp = () => {
 		// Signup ---
 		toast.loading("Wait until you SignUp");
 		e.target.disabled = true;
-		fetch(`http://localhost:5000/api/auth/signup`, {
+		fetch(`https://chatback-gleq.onrender.com/api/auth/signup`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

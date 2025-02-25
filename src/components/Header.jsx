@@ -28,7 +28,7 @@ const Header = () => {
 	const token = localStorage.getItem("token");
 	const getAuthUser = (token) => {
 		dispatch(setLoading(true));
-		fetch(`http://localhost:5000/api/user/profile`, {
+		fetch(`https://chatback-gleq.onrender.com/api/user/profile`, {
 			method: "GET",
 			headers: {
 				"Content-Type": "application/json",

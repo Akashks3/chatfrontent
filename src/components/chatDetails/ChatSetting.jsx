@@ -45,7 +45,7 @@ const ChatSetting = () => {
 		dispatch(setLoading(true));
 		const token = localStorage.getItem("token");
 		fetch(
-			`http://localhost:5000/api/message/clearChat/${
+			`https://chatback-gleq.onrender.com/api/message/clearChat/${
 				selectedChat?._id
 			}`,
 			{
@@ -80,7 +80,7 @@ const ChatSetting = () => {
 		dispatch(setLoading(true));
 		const token = localStorage.getItem("token");
 		fetch(
-			`http://localhost:5000/api/chat/deleteGroup/${
+			`https://chatback-gleq.onrender.com/api/chat/deleteGroup/${
 				selectedChat?._id
 			}`,
 			{

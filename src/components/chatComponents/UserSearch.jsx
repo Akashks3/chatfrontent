@@ -27,7 +27,7 @@ const UserSearch = () => {
 		const getAllUsers = () => {
 			dispatch(setChatLoading(true));
 			const token = localStorage.getItem("token");
-			fetch(`http://localhost:5000/api/user/users`, {
+			fetch(`https://chatback-gleq.onrender.com/api/user/users`, {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json",
@@ -68,7 +68,7 @@ const UserSearch = () => {
 	const handleCreateChat = async (userId) => {
 		dispatch(setLoading(true));
 		const token = localStorage.getItem("token");
-		fetch(`http://localhost:5000/api/chat`, {
+		fetch(`https://chatback-gleq.onrender.com/api/chat`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

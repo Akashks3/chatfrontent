@@ -25,7 +25,7 @@ const MemberAdd = ({ setMemberAddBox }) => {
 		const getAllUsers = () => {
 			dispatch(setChatLoading(true));
 			const token = localStorage.getItem("token");
-			fetch(`http://localhost:5000/api/user/users`, {
+			fetch(`https://chatback-gleq.onrender.com/api/user/users`, {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json",
@@ -78,7 +78,7 @@ const MemberAdd = ({ setMemberAddBox }) => {
 	const handleAddUserCall = () => {
 		dispatch(setLoading(true));
 		const token = localStorage.getItem("token");
-		fetch(`http://localhost:5000/api/chat/groupadd`, {
+		fetch(`https://chatback-gleq.onrender.com/api/chat/groupadd`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

@@ -32,7 +32,7 @@ const GroupChatBox = () => {
 		const getAllUsers = () => {
 			dispatch(setChatLoading(true));
 			const token = localStorage.getItem("token");
-			fetch(`http://localhost:5000/api/user/users`, {
+			fetch(`https://chatback-gleq.onrender.com/api/user/users`, {
 				method: "GET",
 				headers: {
 					"Content-Type": "application/json",
@@ -104,7 +104,7 @@ const GroupChatBox = () => {
 		dispatch(setGroupChatBox());
 		dispatch(setLoading(true));
 		const token = localStorage.getItem("token");
-		fetch(`http:/localhost:5000/api/chat/group`, {
+		fetch(`https://chatback-gleq.onrender.com/api/chat/group`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

@@ -33,7 +33,7 @@ const Overview = () => {
 		}
 		dispatch(setLoading(true));
 		const token = localStorage.getItem("token");
-		fetch(`http://localhost:5000/api/chat/rename`, {
+		fetch(`https://chatback-gleq.onrender.com/api/chat/rename`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

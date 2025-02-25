@@ -1,5 +1,5 @@
 import { io } from "socket.io-client";
-const ENDPOINT = `http://localhost:5000`;
+const ENDPOINT = `https://chatback-gleq.onrender.com`;
 const socket = io(ENDPOINT, {
 	reconnectionDelay: 1000,
 	reconnection: true,
