@@ -4,7 +4,7 @@
 ## Project Overview
 
 A real-time **Chat application** built using the MERN stack (MongoDB, Express, React, Node.js) and styled with Tailwind CSS. It supports user authentication, group chats, and instant messaging with real-time updates via Socket.IO.
-live: https://heartfelt-blancmange-89e354.netlify.app/
+## live: https://heartfelt-blancmange-89e354.netlify.app/
 ## Technologies & Packages Used
 
 -   **MongoDB**: NoSQL database for flexible and scalable data storage.
@@ -30,7 +30,7 @@ Follow these steps to set up and run the project locally:
 
     ```bash
     git clone https://github.com/Akashks3/chatfrontent
-    cd Chat_App
+    cd Chat
     ```
 
 2.  **Install Dependencies:**
