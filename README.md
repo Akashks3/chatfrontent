@@ -1,22 +1,10 @@
-# Chat Application MERN-Stack Web Application.
-
-<p align="center">
-  <b style="color: blue;  ">Visitor count</b>
-  <br>
-  <a style="" href="https://github.com">
-  <img src="https://profile-counter.glitch.me/chat-app/count.svg" />
-  </a>
-</p>
-
----
-
-<a style="" href="">
+# Chat Application MERN-Stack
   
 
 ## Project Overview
 
 A real-time **Chat application** built using the MERN stack (MongoDB, Express, React, Node.js) and styled with Tailwind CSS. It supports user authentication, group chats, and instant messaging with real-time updates via Socket.IO.
-
+live: https://heartfelt-blancmange-89e354.netlify.app/
 ## Technologies & Packages Used
 
 -   **MongoDB**: NoSQL database for flexible and scalable data storage.
@@ -41,7 +29,7 @@ Follow these steps to set up and run the project locally:
 1.  **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/
+    git clone https://github.com/Akashks3/chatfrontent
     cd Chat_App
     ```
 
