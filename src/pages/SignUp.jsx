@@ -6,7 +6,6 @@ import { PiEye, PiEyeClosedLight } from "react-icons/pi";
 
 const SignUp = () => {
 	const [firstName, setFirstName] = useState("");
-	const [lastName, setLastName] = useState("");
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 	const [load, setLoad] = useState("");
@@ -24,7 +23,6 @@ const SignUp = () => {
 			},
 			body: JSON.stringify({
 				firstName: firstName,
-				lastName: lastName,
 				email: email,
 				password: password,
 			}),
@@ -50,10 +48,9 @@ const SignUp = () => {
 			});
 	};
 	const handleSignup = (e) => {
-		if (firstName && lastName && email && password) {
+		if (firstName && email && password) {
 			const validError = checkValidSignUpFrom(
 				firstName,
-				lastName,
 				email,
 				password
 			);
@@ -84,18 +81,6 @@ const SignUp = () => {
 						name="firstName"
 						value={firstName}
 						onChange={(e) => setFirstName(e.target.value)}
-						required
-					/>
-					<h3 className="text-xl font-semibold p-1">
-						Enter Last Name
-					</h3>
-					<input
-						className="w-full border border-slate-700 my-3 py-4 px-8 rounded flex justify-between bg-white text-black "
-						type="text"
-						placeholder="Enter Last Name"
-						name="lastName"
-						value={lastName}
-						onChange={(e) => setLastName(e.target.value)}
 						required
 					/>
 					<h3 className="text-xl font-semibold p-1">
