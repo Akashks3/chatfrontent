@@ -55,9 +55,6 @@ const UserSearch = () => {
 					user.firstName
 						.toLowerCase()
 						.includes(inputUserName?.toLowerCase()) ||
-					user.lastName
-						.toLowerCase()
-						.includes(inputUserName?.toLowerCase()) ||
 					user.email
 						.toLowerCase()
 						.includes(inputUserName?.toLowerCase())
@@ -135,7 +132,7 @@ const UserSearch = () => {
 									/>
 									<div className="w-full">
 										<span className="line-clamp-1 capitalize">
-											{user?.firstName} {user?.lastName}
+											{user?.firstName}
 										</span>
 										<div>
 											<span className="text-xs font-light">
